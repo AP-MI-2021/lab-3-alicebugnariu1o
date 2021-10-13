@@ -1,3 +1,4 @@
+"Toate numerele sunt pare"
 def get_longest_all_even(lst: list[int]):
     lg = len(lst)
     secvmax, start, end = 0, 0, 0  # declaram secventa maxima, indicii de inceput si final toate initial fiind 0
@@ -31,7 +32,7 @@ test_get_longest_all_even()
 def solve1(lst):
     print(f"cea mai lunga secventa care are toate elementele nr pare este: {get_longest_all_even(lst)}")
 
-
+"Toate numerele acelasi numar de divizori"
 def nrdivizori(n: int):
     # calculam nr de divizori ai unui nr si il retinem in nrdiv
     nrdiv = 1
@@ -62,7 +63,7 @@ def get_longest_same_div_count(lst: list[int]):
     listnrdivegali = lst[start: end + 1]
     return listnrdivegali
 
-
+"Produsul numerelor este impar"
 def test_get_longest_same_div_count():
     assert get_longest_same_div_count([10, 8, 20, 15]) == [10, 8]
     assert get_longest_same_div_count([5, 7, 11, 4]) == [5, 7, 11]
